@@ -33,7 +33,7 @@ check_cmd_exit() {
 
 build_image () {
 
-  docker build --rm -t ${IMG} ./docker
+  docker build --rm -t ${IMG} ./
   check_cmd_exit $?
 
   docker scan ${IMG}

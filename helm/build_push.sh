@@ -34,7 +34,7 @@ check_cmd_exit() {
 
 build_image () {
 
-  docker build --rm --build-arg VERSION=${VERSION} -t ${IMG} ./docker
+  docker build --rm --build-arg VERSION=${VERSION} -t ${IMG} ./
   check_cmd_exit $?
 
   docker scan ${IMG}
